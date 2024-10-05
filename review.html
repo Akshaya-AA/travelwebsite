@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 300px;
+    height: 200px;
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color:#ff8a00;;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color:  #e52e71;
+}
+
+    </style>
+</head>
+<body>
+    <header></header>
+        <nav class="navbar">
+            <div class="logo">TravelExplorer</div>
+            <ul>
+                <li><a href="index.html" class="active"> <img src="images/homelogo.png" alt="" height="20px" width="20px">Home</a></li>
+                <li><a href="destinations.html"><img src="images/destinationlogo.png" alt="" height="20px" width="20px"> Destinations</a></li>
+                <li><a href="aboutus.html"><img src="images/aboutlogo.png" alt="" height="20px" width="20px"> About Us</a></li>
+                <li><a href="contact.html"><img src="images/contactlogo.png" alt="" height="20px" width="20px"> Contact</a></li>
+                <li><a href="packages.html"><img src="images/packageslogo.png" alt="" height="20px" width="20px"    > Packages</a></li>
+                <li><a href="review.html"><img src="images/reviewlogo.png" alt="" height="20px" width="20px"> Review</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Travel Destinations</h1>
+        
+        <div class="card">
+            <img src="images/paris.jpg" alt="Destination 1">
+            <div class="card-content">
+                <h2>Paris, France</h2>
+                <p>A beautiful city known for its art, fashion, and culture.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="">Select...</option>
+                            <option value="5">5 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="2">2 Stars</option>
+                            <option value="1">1 Star</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/tokyo.jpg" alt="Destination 2">
+            <div class="card-content">
+                <h2>Tokyo, Japan</h2>
+                <p>A vibrant city that blends tradition with modernity.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name2">Name:</label>
+                        <input type="text" id="name2" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email2">Email:</label>
+                        <input type="email" id="email2" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating2">Rating:</label>
+                        <select id="rating2" name="rating" required>
+                            <option value="">Select...</option>
+                            <option value="5">5 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="2">2 Stars</option>
+                            <option value="1">1 Star</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments2">Comments:</label>
+                        <textarea id="comments2" name="comments" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TravelExplorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

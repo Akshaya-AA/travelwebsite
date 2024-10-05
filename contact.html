@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Existing styles here... */
+
+#contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h1 {
+    margin: 20px 0;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #ff8a00;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TravelExplorer</div>
+            <ul>
+                <li><a href="index.html" class="active"> <img src="images/homelogo.png" alt="" height="20px" width="20px">Home</a></li>
+                <li><a href="destinations.html"><img src="images/destinationlogo.png" alt="" height="20px" width="20px"> Destinations</a></li>
+                <li><a href="aboutus.html"><img src="images/aboutlogo.png" alt="" height="20px" width="20px"> About Us</a></li>
+                <li><a href="contact.html"><img src="images/contactlogo.png" alt="" height="20px" width="20px"> Contact</a></li>
+                <li><a href="packages.html"><img src="images/packageslogo.png" alt="" height="20px" width="20px"    > Packages</a></li>
+                <li><a href="review.html"><img src="images/reviewlogo.png" alt="" height="20px" width="20px"> Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Fill out the form below or reach out through our contact information.</p>
+
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Other Ways to Reach Us</h2>
+            <p>Email: <a href="mailto:info@travelexplorer.com">info@travelexplorer.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TravelExplorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
