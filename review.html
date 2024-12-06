@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .card {
+            display: flex;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 40%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #ff8a00;
+            box-shadow: 0 0 8px rgba(255, 138, 0, 0.5);
+        }
+
+        button {
+            background-color: #ff8a00;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #e52e71;
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes cardAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">TravelExplorer</div>
+            <ul>
+                <li><a href="index.html" class="active"><img src="images/homelogo.png" alt="" height="20px" width="20px">Home</a></li>
+                <li><a href="destinations.html"><img src="images/destinationlogo.png" alt="" height="20px" width="20px"> Destinations</a></li>
+                <li><a href="aboutus.html"><img src="images/aboutlogo.png" alt="" height="20px" width="20px"> About Us</a></li>
+                <li><a href="contact.html"><img src="images/contactlogo.png" alt="" height="20px" width="20px"> Contact</a></li>
+                <li><a href="packages.html"><img src="images/packageslogo.png" alt="" height="20px" width="20px"> Packages</a></li>
+                <li><a href="review.html"><img src="images/reviewlogo.png" alt="" height="20px" width="20px"> Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Share Your Experience</h1>
+
+        <div class="card" style="animation: cardAnimation 1s ease-out;">
+            <img src="images/paris.jpg" alt="Destination 1">
+            <div class="card-content">
+                <h2>Paris, France</h2>
+                <p>A beautiful city known for its art, fashion, and culture.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="">Select...</option>
+                            <option value="5">5 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="2">2 Stars</option>
+                            <option value="1">1 Star</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card" style="animation: cardAnimation 1s ease-out;">
+            <img src="images/tokyo.jpg" alt="Destination 2">
+            <div class="card-content">
+                <h2>Tokyo, Japan</h2>
+                <p>A vibrant city that blends tradition with modernity.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name2">Name:</label>
+                        <input type="text" id="name2" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email2">Email:</label>
+                        <input type="email" id="email2" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating2">Rating:</label>
+                        <select id="rating2" name="rating" required>
+                            <option value="">Select...</option>
+                            <option value="5">5 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="2">2 Stars</option>
+                            <option value="1">1 Star</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments2">Comments:</label>
+                        <textarea id="comments2" name="comments" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <br>
+                <br>
+                <h3>Contact Us</h3>
+                <p><strong>Email:</strong> support@travelexplorer.com</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Address:</strong> 123 Travel St, City, Country</p>
+            </div>
+
+            <div class="footer-section" style="text-align: center;">
+                <br>
+                <br>
+                <h3>Quick Links</h3>
+                <ul style="list-style-type: none; padding: 0; text-align: center;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="review.html">Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-links">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://t.me/yourchannel" target="_blank"><img src="images/telegram.png" alt="Telegram"></a>
+                <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelExplorer. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>

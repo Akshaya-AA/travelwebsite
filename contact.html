@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #contact {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        #contact h1 {
+            margin: 20px 0;
+            color: #333;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .cta-button {
+            padding: 12px 20px;
+            background-color: #ff8a00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            width: 100%;
+        }
+
+        .cta-button:hover {
+            background-color: #e67e00;
+            transform: scale(1.05);
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            animation: fadeInUp 2s ease-out;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .contact-info a {
+            color: #ff8a00;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TravelExplorer</div>
+            <ul>
+                <li><a href="index.html" class="active"> <img src="images/homelogo.png" alt="" height="20px" width="20px">Home</a></li>
+                <li><a href="destinations.html"><img src="images/destinationlogo.png" alt="" height="20px" width="20px"> Destinations</a></li>
+                <li><a href="aboutus.html"><img src="images/aboutlogo.png" alt="" height="20px" width="20px"> About Us</a></li>
+                <li><a href="contact.html"><img src="images/contactlogo.png" alt="" height="20px" width="20px"> Contact</a></li>
+                <li><a href="packages.html"><img src="images/packageslogo.png" alt="" height="20px" width="20px"> Packages</a></li>
+                <li><a href="review.html"><img src="images/reviewlogo.png" alt="" height="20px" width="20px"> Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Fill out the form below or reach out through our contact information.</p>
+
+        <form action="#" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="cta-button">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <h2>Other Ways to Reach Us</h2>
+            <p>Email: <a href="#">info@travelexplorer.com</a></p>
+            <p>Phone: <a href="#">+91(84845 84845)</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <br>
+                <br>
+                <h3>Contact Us</h3>
+                <p><strong>Email:</strong> support@travelexplorer.com</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Address:</strong> 123 Travel St, City, Country</p>
+            </div>
+
+            <div class="footer-section" style="text-align: center;">
+                <br>
+                <br>
+                <h3>Quick Links</h3>
+                <ul style="list-style-type: none; padding: 0; text-align: center;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="review.html">Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-links">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://t.me/yourchannel" target="_blank"><img src="images/telegram.png" alt="Telegram"></a>
+                <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelExplorer. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #home {
+            padding: 100px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        #home h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #333;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        #home p {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #777;
+        }
+        #destinations {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        #destinations h1 {
+            margin: 20px 0;
+            color: #333;
+            font-size: 36px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .destination-card {
+            display: inline-block;
+            width: 250px;
+            height: 350px; 
+            margin: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .destination-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .destination-card p {
+            margin: 0 10px 10px;
+            font-size: 14px;
+            color: #777;
+            font-style: italic;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .destination-card:hover h3 {
+            color: #e52e71;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TravelExplorer</div>
+            <ul>
+                <li><a href="index.html" class="active"> <img src="images/homelogo.png" alt="" height="20px" width="20px">Home</a></li>
+                <li><a href="destinations.html"><img src="images/destinationlogo.png" alt="" height="20px" width="20px"> Destinations</a></li>
+                <li><a href="aboutus.html"><img src="images/aboutlogo.png" alt="" height="20px" width="20px"> About Us</a></li>
+                <li><a href="contact.html"><img src="images/contactlogo.png" alt="" height="20px" width="20px"> Contact</a></li>
+                <li><a href="packages.html"><img src="images/packageslogo.png" alt="" height="20px" width="20px"    > Packages</a></li>
+                <li><a href="review.html"><img src="images/reviewlogo.png" alt="" height="20px" width="20px"> Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to TravelExplorer</h1>
+        <p>Your journey begins here!</p>
+    </section>
+
+    <section id="destinations">
+        <h1>Explore Our Top Destinations</h1>
+        <div class="destination-card">
+            <img src="images/paris.jpg" alt="Paris" />
+            <h3>Paris, France</h3>
+            <p>Discover the romance and beauty of the City of Light.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/bali.jpg" alt="Bali" />
+            <h3>Bali, Indonesia</h3>
+            <p>Relax on pristine beaches and immerse yourself in rich culture.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/newyork.jpg" alt="New York" />
+            <h3>New York, USA</h3>
+            <p>Experience the hustle and bustle of the city that never sleeps.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/tokyo.jpg" alt="Tokyo" />
+            <h3>Tokyo, Japan</h3>
+            <p>A vibrant mix of traditional culture and modern innovation.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/singapore.jpg" alt="Singapore" />
+            <h3>Singapore</h3>
+            <p>Vibrant lights, tranquil skyline.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/china.jpg" alt="China" />
+            <h3>China</h3>
+            <p>Rich history, stunning landscapes.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/maldives.jpg" alt="Maldives" />
+            <h3>Maldives</h3>
+            <p>Pristine beaches, crystal-clear waters.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/ukraine.jpg" alt="Ukraine" />
+            <h3>Ukraine</h3>
+            <p>Rich culture, stunning landscapes</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/turky.jpg" alt="Turkey" />
+            <h3>Turkey</h3>
+            <p>Historic sites, diverse landscapes.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/iceland.jpg" alt="Iceland" />
+            <h3>Iceland</h3>
+            <p>Stunning glaciers, vibrant geysers.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/russia.jpg" alt="Russia" />
+            <h3>Russia</h3>
+            <p>Majestic architecture, vast wilderness.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/southkorea.jpg" alt="South Korea" />
+            <h3>South Korea</h3>
+            <p>Dynamic cities, rich traditions.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/germany.jpg" alt="Germany" />
+            <h3>Germany</h3>
+            <p>Historic castles, scenic landscapes.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/dubai.jpg" alt="Dubai" />
+            <h3>Dubai</h3>
+            <p>Luxurious skyline, vibrant culture.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/africa.jpg" alt="Africa" />
+            <h3>Africa</h3>
+            <p>Experience the hustle and bustle of the city that never sleeps.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/turky.jpg" alt="Turkey" />
+            <h3>Turkey</h3>
+            <p>Historic sites, diverse landscapes.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/bali.jpg" alt="Bali" />
+            <h3>Bali</h3>
+            <p>Lush greenery, serene beaches.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/paris.jpg" alt="Paris" />
+            <h3>Paris</h3>
+            <p>Romantic streets, iconic landmarks.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/turky.jpg" alt="Turkey" />
+            <h3>Turkey</h3>
+            <p>Diverse culture, breathtaking landscapes.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/iceland.jpg" alt="Iceland" />
+            <h3>Iceland</h3>
+            <p>Stunning glaciers, vibrant geysers.</p>
+        </div>
+        <div class="destination-card">
+            <img src="images/africa.jpg" alt="Africa" />
+            <h3>Africa</h3>
+            <p>Experience the hustle and bustle of the city that never sleeps.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <br>
+                <br>
+                <h3>Contact Us</h3>
+                <p><strong>Email:</strong> support@travelexplorer.com</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Address:</strong> 123 Travel St, City, Country</p>
+            </div>
+
+            <div class="footer-section" style="text-align: center;">
+                <br>
+                <br>
+                <h3>Quick Links</h3>
+                <ul style="list-style-type: none; padding: 0; text-align: center;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="review.html">Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-links">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://t.me/yourchannel" target="_blank"><img src="images/telegram.png" alt="Telegram"></a>
+                <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelExplorer. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>

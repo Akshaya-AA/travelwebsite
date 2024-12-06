@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #about {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #fff;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        #about h1 {
+            margin: 20px 0;
+            color: #333;
+            animation: bounceIn 1s ease;
+        }
+
+        #our-team {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        #our-team h2 {
+            margin-bottom: 20px;
+            color: #333;
+            animation: slideInUp 1s ease;
+        }
+
+        .team-member {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .team-member h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .team-member p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .team-member .role {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ff8a00; 
+            margin-bottom: 10px;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member:hover img {
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0);
+            }
+            60% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TravelExplorer</div>
+            <ul>
+                <li><a href="index.html" class="active"> <img src="images/homelogo.png" alt="" height="20px" width="20px">Home</a></li>
+                <li><a href="destinations.html"><img src="images/destinationlogo.png" alt="" height="20px" width="20px"> Destinations</a></li>
+                <li><a href="aboutus.html"><img src="images/aboutlogo.png" alt="" height="20px" width="20px"> About Us</a></li>
+                <li><a href="contact.html"><img src="images/contactlogo.png" alt="" height="20px" width="20px"> Contact</a></li>
+                <li><a href="packages.html"><img src="images/packageslogo.png" alt="" height="20px" width="20px"    > Packages</a></li>
+                <li><a href="review.html"><img src="images/reviewlogo.png" alt="" height="20px" width="20px"> Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <p>At TravelExplorer, our mission is to inspire and empower travelers to explore the world.</p>
+        <p>We believe that every journey creates unforgettable memories and enriches our lives.</p>
+    </section>
+
+    <section id="our-team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="images/johndoe.webp" alt="Team Member 1" />
+            <div class="role">Founder & CEO</div>
+            <h3>Jane Doe</h3>
+            <p>Jane has traveled to over 50 countries and is passionate about helping others discover the joy of travel.</p>
+        </div>
+        <div class="team-member">
+            <img src="images/johnsm1.jpg" alt="Team Member 2" />
+            <div class="role">Travel Consultant</div>
+            <h3>John Smith</h3>
+            <p>John specializes in creating unforgettable itineraries tailored to individual preferences.</p>
+        </div>
+        <div class="team-member">
+            <img src="images/alice.jpg" alt="Team Member 3" />
+            <div class="role">Marketing Director</div>
+            <h3>Alice Johnson</h3>
+            <p>Alice loves to share travel tips and experiences through our social media channels.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <br>
+                <br>
+                <h3>Contact Us</h3>
+                <p><strong>Email:</strong> support@travelexplorer.com</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Address:</strong> 123 Travel St, City, Country</p>
+            </div>
+
+            <div class="footer-section" style="text-align: center;">
+                <br>
+                <br>
+                <h3>Quick Links</h3>
+                <ul style="list-style-type: none; padding: 0; text-align: center;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="review.html">Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-links">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://t.me/yourchannel" target="_blank"><img src="images/telegram.png" alt="Telegram"></a>
+                <a href="https://youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TravelExplorer. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+</html>
